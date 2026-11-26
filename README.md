@@ -3,7 +3,9 @@
 Une application installable sur téléphone, comme Discipolat. Les données sont rangées dans un **Google Sheet**
 qui appartient au gérant (consultable et imprimable à tout moment).
 
-Adresse (après mise en ligne) : **https://discipolat-psi.vercel.app/pharmacie/**
+Adresse : **https://mireillembonda-coder.github.io/pharmacie-jireh/** (publiée automatiquement à chaque modification de `main`, voir `.github/workflows/pages.yml`).
+
+Ancienne adresse, toujours active : https://discipolat-psi.vercel.app/pharmacie/
 
 ## Qui peut faire quoi
 
