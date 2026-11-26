@@ -1,6 +1,6 @@
 // Garde la coquille de l'application en mémoire (ouverture rapide).
 // Les données, elles, viennent toujours du serveur (en ligne).
-var CACHE = 'pharmacie-v1.3';
+var CACHE = 'pages-pharmacie-v1';
 var FILES = ['./', 'index.html', 'app.css', 'app.js', 'logique.js', 'config.js', 'manifest.webmanifest',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/maskable-512.png', 'icons/apple-touch-icon.png'];
 
@@ -10,7 +10,7 @@ self.addEventListener('install', function (e) {
 });
 self.addEventListener('activate', function (e) {
   e.waitUntil(caches.keys().then(function (keys) {
-    return Promise.all(keys.filter(function (k) { return k.indexOf('pharmacie-') === 0 && k !== CACHE; }).map(function (k) { return caches.delete(k); }));
+    return Promise.all(keys.filter(function (k) { return k.indexOf('pages-pharmacie-') === 0 && k !== CACHE; }).map(function (k) { return caches.delete(k); }));
   }));
   self.clients.claim();
 });
